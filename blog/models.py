@@ -31,7 +31,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField(null=True, blank=True)
     created_date = models.DateTimeField(auto_now_add=True)
-    publised_date = models.DateTimeField(auto_now_add=True)
+    published_date = models.DateTimeField(auto_now_add=True)
 
     def publish(self):
         self.save()
